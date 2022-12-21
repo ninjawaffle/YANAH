@@ -7,8 +7,8 @@ BOOL WINAPI MainThread()
 {
     NierAutomata na;
     na.CreateConsole();
-    na.Initialise(); // Set offsets
-    na.Update(); // Set values
+    na.Initialise(); // Resolve any runtime values
+    na.Update(); // Re-read and update values
      
     return TRUE;
 }
